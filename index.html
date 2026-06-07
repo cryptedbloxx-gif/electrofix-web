@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ElectroFix Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero{
+    animation:fadeUp 1.5s ease;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+    opacity:.9;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(34,197,94,.4);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.product{
+    background:#1e293b;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+}
+
+.product:hover{
+    transform:scale(1.05);
+}
+
+.product span{
+    font-size:4rem;
+}
+
+.contact{
+    text-align:center;
+    background:#1e293b;
+    border-radius:25px;
+    padding:50px;
+}
+
+.contact h2{
+    margin-bottom:15px;
+}
+
+.phone{
+    font-size:2rem;
+    font-weight:bold;
+    color:#22c55e;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .title{
+        font-size:2rem;
+    }
+
+    .phone{
+        font-size:1.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="hero">
+
+        <h1>ElectroFix Services</h1>
+
+        <p>
+            Buy & Sell Quality Second-Hand Appliances and Get Professional
+            Home Repair Services. Fast, Affordable & Trusted.
+        </p>
+
+        <!-- SCROLL BUTTON -->
+        <a href="#contact" class="btn">
+            📞 Call Now
+        </a>
+
+    </div>
+</header>
+
+<section>
+    <h2 class="title">Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>❄ AC Repair</h3>
+            <p>Installation, servicing, gas filling, cooling issues and maintenance.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧺 Washing Machine Repair</h3>
+            <p>Fully automatic, semi-automatic and front-load machine repairs.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧊 Fridge Repair</h3>
+            <p>Cooling issues, compressor problems and complete servicing.</p>
+        </div>
+
+        <div class="card">
+            <h3>💧 RO Repair</h3>
+            <p>RO water purifier maintenance, filter replacement and repair.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="title">Used Appliances For Sale</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <span>❄</span>
+            <h3>Second-Hand ACs</h3>
+            <p>Affordable and tested units available.</p>
+        </div>
+
+        <div class="product">
+            <span>🧊</span>
+            <h3>Second-Hand Fridges</h3>
+            <p>Single Door & Double Door options.</p>
+        </div>
+
+        <div class="product">
+            <span>🧺</span>
+            <h3>Washing Machines</h3>
+            <p>Top Load & Front Load models available.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+
+    <div class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Need a repair or looking to buy a used appliance?
+            Call us today and we'll be happy to help.
+        </p>
+
+        <br>
+
+        <div class="phone">
+            📞 9878088945
+        </div>
+
+        <br>
+
+        <!-- ACTUAL CALL BUTTON -->
+        <a href="tel:9878088945" class="btn">
+            Call 9878088945
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 ElectroFix Services | AC • Fridge • Washing Machine • RO Repair
+</footer>
+
+</body>
+</html>
